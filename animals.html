@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="ArcadiaLogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8c061cdc6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Zoo Arcadia</title>
+  </head>
+  <body class="roboto-regular">
+    <header class="not-index-header">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="align-items: flex-start; background-color: #402905"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="ArcadiaLogo.png"
+              style="height: 10vh; width: 10vh"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Animaux</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Habitats
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Savane</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Marais</a></li>
+                  <li><a class="dropdown-item" href="#">Jungle</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Activités
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Restauration</a></li>
+                  <li><a class="dropdown-item" href="#">Petit train</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Connexion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="text-center m-5 neucha-regular">Tous nos animaux</h1>
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <p class="">Filtrer par habitat:</p>
+        <fieldset class="d-flex flex-row flex-wrap">
+          <div class="mx-2">
+            <input type="checkbox" id="savane" />
+            <label for="savane">Savane</label>
+          </div>
+          <div class="mx-2">
+            <input type="checkbox" id="savane" />
+            <label for="savane">Jungle</label>
+          </div>
+          <div class="mx-2">
+            <input type="checkbox" id="savane" />
+            <label for="savane">Marais</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <section class="d-flex flex-row flex-wrap my-5">
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center clickable-div"
+        >
+          <div
+            class="circle-container"
+            onclick="window.location.href='animal-detail.html'"
+          >
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+
+        <div
+          class="col-4 col-sm-3 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="circle-container">
+            <img src="phpLZpIW4.jpg" class="img-fluid" alt="" />
+          </div>
+          <h5 class="neucha-regular">Anansi</h5>
+          <h6 class="neucha-regular">Rhinoceros Blanc</h6>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="text-white d-flex flex-column"
+      style="background-color: #402905; border-top: 1px solid black"
+    >
+      <div class="d-flex flex-column flex-md-row py-4">
+        <div class="col-md-3 d-flex align-items-center justify-content-center">
+          <img
+            class="img-fluid d-block"
+            src="ArcadiaLogo.png"
+            alt=""
+            style="width: 15vh"
+          />
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h4 class="text-center mb-3">Contact</h4>
+          <p class="text-center">
+            <span class="me-3">Adresse:</span> 666 rue de l'Enchanteur Merlin<br />
+            35380 PAIMPONT
+          </p>
+          <p class="text-center">
+            <span class="me-3">Mail:</span> contact@arcadia.fr
+          </p>
+          <p class="text-center">
+            <span class="me-3">Tel.:</span> 01.23.45.67.89
+          </p>
+        </div>
+        <div class="col-md-3 mx-auto text-center">
+          <h4 class="text-center mb-3">Explorer</h4>
+          <p>Animaux</p>
+          <p>Habitats</p>
+          <p>Activités</p>
+          <p>Conservation</p>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h4 class="text-center mb-3">Réseaux Sociaux</h4>
+          <div class="social-icons d-flex flex-column justify-content-center">
+            <a
+              class="mx-auto fs-1 text-white"
+              title="Mon Compte LinkedIn"
+              href="#"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a class="mx-auto fs-1 text-white" title="Page Instagram" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="mx-auto fs-1 text-white" title="Page Facebook" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 bg-dark">
+        <p class="text-white text-center">
+          <span class="me-4">MENTIONS LEGALES</span>|
+          <span class="ms-4">POLITIQUE DE CONFIDENTIALITÉ</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
