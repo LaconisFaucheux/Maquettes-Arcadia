@@ -68,7 +68,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Animaux</a>
+                <a class="nav-link active" href="animals.html">Animaux</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -86,7 +86,14 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <a class="dropdown-item" href="#">Savane</a>
+                    <a class="dropdown-item" href="habitats.html"
+                      >Tous les habitats</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="habitat-detail.html"
+                      >Savane</a
+                    >
                   </li>
                   <li><a class="dropdown-item" href="#">Marais</a></li>
                   <li><a class="dropdown-item" href="#">Jungle</a></li>
@@ -107,12 +114,20 @@
                   class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDropdown"
                 >
-                  <li><a class="dropdown-item" href="#">Restauration</a></li>
-                  <li><a class="dropdown-item" href="#">Petit train</a></li>
+                  <li>
+                    <a class="dropdown-item" href="activites.html"
+                      >Restauration</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="activites.html"
+                      >Petit train</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conservation</a>
+                <a class="nav-link" href="#">Philosophie</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Connexion</a>
@@ -122,6 +137,19 @@
         </div>
       </nav>
     </header>
+
+    <nav
+      style="--bs-breadcrumb-divider: '>'"
+      class="ms-3 mt-2"
+      aria-label="breadcrumb"
+    >
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active">
+          <a href="animals.html">Animaux</a>
+        </li>
+      </ol>
+    </nav>
 
     <main>
       <h1 class="text-center m-5 neucha-regular">Tous nos animaux</h1>
@@ -133,12 +161,12 @@
             <label for="savane">Savane</label>
           </div>
           <div class="mx-2">
-            <input type="checkbox" id="savane" />
-            <label for="savane">Jungle</label>
+            <input type="checkbox" id="jungle" />
+            <label for="jungle">Jungle</label>
           </div>
           <div class="mx-2">
-            <input type="checkbox" id="savane" />
-            <label for="savane">Marais</label>
+            <input type="checkbox" id="marais" />
+            <label for="marais">Marais</label>
           </div>
         </fieldset>
       </div>
